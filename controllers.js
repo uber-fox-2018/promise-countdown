@@ -10,9 +10,8 @@ const timer = seconds =>
       const secondsLeft = Math.floor((then - Date.now()) / 1000);
       if (secondsLeft < 0) {
         clearInterval(count);
-        resolve("Finish");
       } else {
-        displayCountdown(secondsLeft);
+        resolve(displayCountdown(secondsLeft))
       }
     }, 1000);
   });

@@ -5,10 +5,9 @@ function timer(seconds) {
     const now = Date.now();
     const then = now + seconds * 1000;
     let count = setInterval(() => {
-      displayCountdown(seconds - 1);
+      // displayCountdown(seconds - 1);
       const secondsLeft = Math.floor((then - Date.now()) / 1000);
-      // console.log(secondsLeft);
-      if (secondsLeft < 0) {
+      if (seconds < 0) {
         clearInterval(count)
         reject();
       } else {
@@ -28,7 +27,8 @@ function timer(seconds) {
           sec = '0' + sec;
         }
         let countDown = `${mins} : ${sec}`;
-        resolve(countDown)
+        let display = displayCountdown(countDown)
+        resolve(display)
       }
       seconds--
     }, 1000);

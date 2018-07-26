@@ -7,6 +7,19 @@
   "dependencies": {
     "chalk": "2.3.1",
     "clear": "0.0.1",
-    "figlet": "1.2.0"
-  }
+    "figlet": "1.2.0",
+    "sqlite3": "^4.0.2"
+  },
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uber-fox-2018/promise-countdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uber-fox-2018/promise-countdown/issues"
+  },
+  "homepage": "https://github.com/uber-fox-2018/promise-countdown#readme"
 }
